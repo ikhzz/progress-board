@@ -14,8 +14,8 @@ class Progress {
   }
 
   create = async (name: String, desc: String, type: string) => {
-    // const types = ["todo", "onprogress", "done"]
-    // if (!types.includes(type)) throw "progress type is not valid"
+    const types = ["todo", "onprogress", "done"]
+    if (!types.includes(type)) throw "progress type is not valid"
 
     const query = `INSERT INTO progress (name, description, type) VALUES ($1, $2, $3)`
     try {
