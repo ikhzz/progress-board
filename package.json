@@ -1,0 +1,29 @@
+{
+  "name": "progress_board_test",
+  "version": "1.0.0",
+  "description": "technical test of progress board from atto",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon",
+    "migrate": "node-pg-migrate",
+    "runmg": "DATABASE_URL=postgres://postgres@localhost:5432/progressboard npm run migrate up"
+  },
+  "author": "Mohammad Zul Fikri",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "node-pg-migrate": "^5.10.0",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "pg": "^8.7.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.6.2",
+    "@types/passport": "^1.0.7",
+    "@types/passport-jwt": "^3.0.6",
+    "@types/pg": "^8.6.1",
+    "ts-node": "^10.2.1"
+  }
+}
